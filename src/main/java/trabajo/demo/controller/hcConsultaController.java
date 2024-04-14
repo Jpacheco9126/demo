@@ -50,31 +50,12 @@ public class hcConsultaController {
     @PostMapping("deshabilitar")
     public void updateConsultaByIndHabilitado(@RequestBody Map<String, Integer> body){
 
-        Integer idConsulta = body.get("idconsulta");
+        Integer idConsulta = body.get("idConsulta");
         hcConsultaS.updateHcConsultaByIndHabilitado(idConsulta);
     }
 
-    /*@PostMapping("deshabilitar")
-public void updateConsultaByIndHabilitado(@RequestParam Integer idConsulta){
-
-    hcConsultaS.updateHcConsultaByIndHabilitado(idConsulta);
-}
- */
 }
 
-
-    /*
-     * 
-     * 
-     * 
-     * public String updateConsultaByIndHabilitado(@RequestBody Map<Integer, Integer> body){
-
-        Integer idConsulta = body.get(idConsulta);
-        hcConsultaS.updateHcConsultaByIndHabilitado(idConsulta);
-        return "Consulta modificada con éxito";
-    }
-     * 
-     */
     
 
 
